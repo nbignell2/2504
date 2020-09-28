@@ -19,35 +19,47 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
         body: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-          Container(
-              height: 100,
-              width: 100,
-              //color: Colors.yellow[700],
-              child: Center(child: Text('Container 1')),
-              decoration: BoxDecoration(
-                color: Colors.yellow[700],
-                border: Border.all(color: Colors.black, width: 3),
-              )),
-          Container(
-            height: 100,
-            width: 100,
-            color: Colors.yellow[400],
-            child: Text('Container 3'),
-            alignment: Alignment.bottomCenter,
+          Column(
+            children: [
+              Container(
+                  height: 100,
+                  width: 100,
+                  //color: Colors.yellow[700],
+                  child: Center(child: Text('Container 1')),
+                  decoration: BoxDecoration(
+                    color: Colors.yellow[700],
+                    border: Border.all(color: Colors.black, width: 3),
+                  )),
+            ],
           ),
-          Container(
-            height: 100,
-            width: 100,
-            child: Center(
-              child: Text(
-                'Container 5',
-                style: TextStyle(color: Colors.white),
+          Column(
+            children: [
+              Container(
+                height: 100,
+                width: 100,
+                color: Colors.yellow[400],
+                child: Text('Container 3'),
+                alignment: Alignment.bottomCenter,
               ),
-            ),
-            decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.black,
-                border: Border.all(color: Colors.white, width: 3)),
+            ],
+          ),
+          Column(
+            children: [
+              Container(
+                height: 100,
+                width: 100,
+                child: Center(
+                  child: Text(
+                    'Container 5',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+                decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: Colors.black,
+                    border: Border.all(color: Colors.white, width: 3)),
+              ),
+            ],
           )
         ]),
       ),
