@@ -34,13 +34,31 @@ class MyApp extends StatelessWidget {
           ),
           Column(
             children: [
-              Container(
-                height: 100,
-                width: 100,
-                color: Colors.yellow[400],
-                child: Text('Container 3'),
-                alignment: Alignment.bottomCenter,
+              Expanded(
+                flex: 1,
+                child: Padding(
+                  padding: const EdgeInsets.all(10),
+                  child: Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.yellow[400],
+                    child: Text('Container 3'),
+                    alignment: Alignment.bottomCenter,
+                  ),
+                ),
               ),
+              Expanded(
+                  flex: 1,
+                  child: Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.blue[400],
+                      child: Text('Container 4'),
+                      alignment: Alignment.centerRight,
+                    ),
+                  ))
             ],
           ),
           Column(
