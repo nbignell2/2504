@@ -32,12 +32,17 @@ class MyApp extends StatelessWidget {
             height: 100,
             width: 100,
             color: Colors.yellow[400],
+            child: Text('Container 3'),
+            alignment: Alignment.bottomCenter,
           ),
           Container(
             height: 100,
             width: 100,
             child: Center(
-              child: Text('Container 5'),
+              child: Text(
+                'Container 5',
+                style: TextStyle(color: Colors.white),
+              ),
             ),
             decoration: BoxDecoration(
                 shape: BoxShape.circle,
