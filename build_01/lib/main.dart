@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 
@@ -30,6 +31,16 @@ class MyApp extends StatelessWidget {
                     color: Colors.yellow[700],
                     border: Border.all(color: Colors.black, width: 3),
                   )),
+              Transform.rotate(
+                angle: pi / 4,
+                child: Container(
+                    height: 100,
+                    width: 100,
+                    color: Colors.white,
+                    child: Center(
+                      child: Text('Container 2'),
+                    )),
+              )
             ],
           ),
           Column(
